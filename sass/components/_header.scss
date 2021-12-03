@@ -1,0 +1,130 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/*-Navigation*/
+
+.navigation {
+  display: flex;
+}
+
+.navigation-heading {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-logo {
+  align-items: center;
+  display: block;
+  margin-right: 93px;
+  color: var(--secondary-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  &__accent {
+    color: var(--accent);
+  }
+  @media screen and(max-width:767px) {
+    padding: 16px 0 16px 15px;
+  }
+}
+.navigation-list {
+  display: flex;
+  list-style: none;
+  @media screen and(max-width: $tablet) {
+    display: none;
+  }
+}
+
+.navigation-item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.navigation-link {
+  padding: 32px 0;
+  display: block;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+.navigation-link__accent {
+  position: relative;
+  padding: 32px 0;
+  display: block;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+}
+
+.navigation-link__current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--accent);
+  border-radius: 2px;
+}
+
+/*authorization*/
+
+.authorization-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  list-style: none;
+  @media screen and(max-width: $tablet) {
+    display: none;
+  }
+}
+
+.authorization-item {
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.authorization-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  fill: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent);
+    color: var(--accent);
+  }
+}
+
+.authorization-icon {
+  margin-right: 10px;
+}
