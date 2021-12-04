@@ -1,14 +1,27 @@
 .filter-list {
-  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
   list-style: none;
+  @media (max-width: 479px) {
+    max-width: 480px;
+
+    flex-wrap: wrap;
+  }
+  @media (min-width: 480px), (max-width: 767px) {
+    width: 480px;
+    flex-wrap: wrap;
+  }
 }
 
 .filter-link {
   margin-right: 8px;
   &:last-child {
     margin-right: 0px;
+  }
+  @media (max-width: 479px) {
+    margin-top: 15px;
+  }
+  @media (min-width: 480px), (max-width: 767px) {
+    margin-top: 15px;
   }
 }
 
