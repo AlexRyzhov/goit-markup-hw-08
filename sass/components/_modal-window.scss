@@ -3,7 +3,6 @@
 /*backdrop*/
 
 .backdrop {
-  display: none;
   z-index: 1;
   position: fixed;
   left: 0;
@@ -33,6 +32,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 4px;
+
+  @media (max-width: 479px) {
+    overflow-y: scroll;
+    width: 450px;
+  }
+  @media (min-width: 480px), (max-width: 767px) {
+    overflow-y: scroll;
+    width: 450px;
+  }
 }
 
 /*Конпа закрытия модального окна*/

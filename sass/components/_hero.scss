@@ -5,7 +5,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
 
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     width: 480px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -18,7 +18,7 @@
     background-size: cover;
   }
   @media (min-width: 481px), (min-width: 767px) {
-    width: 480px;
+    max-width: 480px;
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(
@@ -36,7 +36,7 @@
 }
 
 .hero-slogan {
-  @media (max-width: 479px) {
+  @media screen and (max-width: 479px) {
     max-width: 360px;
     margin: auto;
     text-transform: uppercase;
