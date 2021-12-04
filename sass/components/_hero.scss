@@ -1,16 +1,83 @@
 .hero {
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/index/background_image.jpg);
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
-  @media screen and(max-width: $tablet) {
-    width: 768px;
+
+  @media (max-width: 480px) {
+    width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/index/background_image_mobile.jpg);
+    background-size: cover;
+  }
+  @media (min-width: 481px), (min-width: 767px) {
+    width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/index/background_image_mobile.jpg);
+    background-size: cover;
+  }
+}
+.hero-heading {
+  text-align: center;
+  margin: auto;
+}
+
+.hero-slogan {
+  @media (max-width: 479px) {
+    max-width: 360px;
+    margin: auto;
+    text-transform: uppercase;
+    color: var(--pirmary-background-color);
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+  @media (min-width: 480px), (min-width: 767px) {
+    max-width: 360px;
+    margin: auto;
+    text-transform: uppercase;
+    color: var(--pirmary-background-color);
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+}
+
+.hero-button {
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  background-color: var(--accent);
+  color: var(--pirmary-background-color);
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
   }
 }

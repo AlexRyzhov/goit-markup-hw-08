@@ -1,7 +1,12 @@
 .header {
   border-bottom: 1px solid #ececec;
-  max-width: 1600px;
   margin: 0 auto;
+  @media screen and(max-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 481px), (max-width: 767px) {
+    width: 480px;
+  }
 }
 
 /*-Navigation*/
@@ -13,11 +18,15 @@
 .navigation-heading {
   display: flex;
   align-items: center;
+  @media (max-width: 479px) {
+    max-width: 480px;
+  }
+  @media (min-width: 480px), (max-width: 767px) {
+    width: 480px;
+  }
 }
 
 .navigation-logo {
-  align-items: center;
-  display: block;
   margin-right: 93px;
   color: var(--secondary-text-color);
   font-family: Raleway, sans-serif;
@@ -29,13 +38,13 @@
     color: var(--accent);
   }
   @media screen and(max-width:767px) {
-    padding: 16px 0 16px 15px;
+    margin-right: 0px;
   }
 }
 .navigation-list {
   display: flex;
   list-style: none;
-  @media screen and(max-width: $tablet) {
+  @media (max-width: $tablet) {
     display: none;
   }
 }
@@ -127,4 +136,12 @@
 
 .authorization-icon {
   margin-right: 10px;
+}
+
+.submenu {
+  padding: 16px 0;
+  margin-left: auto;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }

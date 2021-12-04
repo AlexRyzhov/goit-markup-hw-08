@@ -32,21 +32,23 @@ img {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0px 15px;
-
-  @media screen and(max-width: 480px) {
-    width: 480px;
+  @media (max-width: 479px) {
+    max-width: 480px;
   }
-  @media screen and(max-width: 768px) {
-    width: 768px;
+  @media (min-width: 481px), (max-width: 767px) {
+    width: 480px;
   }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media (max-width: 479px) {
+    padding: 60px 0;
+  }
+  @media (min-width: 481px), (max-width: 767px) {
+    padding: 60px 0;
+  }
 }
 
 .visually-hidden {
