@@ -6,6 +6,10 @@
   @media (min-width: 481px), (max-width: 767px) {
     display: block;
   }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .benefits-item {
@@ -21,6 +25,16 @@
   @media (min-width: 481px), (max-width: 767px) {
     display: inline;
   }
+  @media (min-width: 768px) {
+    margin-top: 30px;
+    max-width: 354px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+    &:nth-child(-n + 2) {
+      margin-top: 0;
+    }
+  }
 }
 
 .benefits-icon {
@@ -35,6 +49,9 @@
     margin: 0 auto;
   }
   @media (min-width: 481px), (max-width: 767px) {
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
     margin: 0 auto;
   }
 }
@@ -53,6 +70,9 @@
     margin-top: 30px;
     margin-left: auto;
     text-align: center;
+  }
+  @media (min-width: 768px) {
+    text-align: start;
   }
 }
 

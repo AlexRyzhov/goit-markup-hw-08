@@ -40,6 +40,9 @@ img {
   @media (min-width: 481px), (max-width: 767px) {
     width: 480px;
   }
+  @media (min-width: 768px) {
+    width: 768px;
+  }
 }
 
 .section {
@@ -47,6 +50,9 @@ img {
     padding: 60px 0;
   }
   @media (min-width: 481px), (max-width: 767px) {
+    padding: 60px 0;
+  }
+  @media (min-width: 768px) {
     padding: 60px 0;
   }
 }
