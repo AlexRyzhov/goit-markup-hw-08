@@ -34,7 +34,7 @@ img {
 .container {
   margin: 0 auto;
   padding: 0px 15px;
-  @media (max-width: 479px) {
+  @media (max-width: 480px) {
     max-width: 480px;
   }
   @media (min-width: 481px), (max-width: 767px) {
@@ -43,7 +43,7 @@ img {
 }
 
 .section {
-  @media (max-width: 479px) {
+  @media (max-width: 480px) {
     padding: 60px 0;
   }
   @media (min-width: 481px), (max-width: 767px) {
