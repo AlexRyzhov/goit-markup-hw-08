@@ -1,10 +1,10 @@
 .team {
   background-color: var(--secondary-background-color);
   margin: 0 auto;
-  @media (max-width: 480px) {
+  @media (max-width: 479px) {
     width: 480px;
   }
-  @media (min-width: 481px), (max-width: 767px) {
+  @media (min-width: 480px), {
     max-width: 767px;
   }
 }
@@ -16,10 +16,10 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   text-align: center;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     font-size: 28px;
   }
-  @media (min-width: 481px), (max-width: 767px) {
+  @media (min-width: 480px), (max-width: 767px) {
     font-size: 28px;
   }
 }
@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 479px) {
     display: block;
   }
   @media (min-width: 481px), (max-width: 767px) {
