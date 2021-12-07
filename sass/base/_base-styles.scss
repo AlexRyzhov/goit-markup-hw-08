@@ -25,7 +25,9 @@ li {
   margin: 0;
   padding: 0;
 }
-
+ul {
+  list-style: none;
+}
 img {
   max-width: 100%;
   display: block;
@@ -34,11 +36,14 @@ img {
 .container {
   margin: 0 auto;
   padding: 0px 15px;
-  @media (max-width: 480px) {
-    max-width: 480px;
-  }
-  @media (min-width: 481px), (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
