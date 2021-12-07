@@ -553,15 +553,22 @@ img {
   margin-right: 10px;
 }
 
-.submenu {
-  padding: 16px 0;
+.menu-toggle {
+  background-color: var(--pirmary-background-color);
+  border: var(--pirmary-background-color);
+  margin: 16px 0;
+  cursor: pointer;
   margin-left: auto;
 }
 
 @media (min-width: 768px) {
-  .submenu {
+  .menu-toggle {
     display: none;
   }
+}
+
+.menu-icon:hover, .menu-icon:focus {
+  color: var(--accent);
 }
 
 .hero {
@@ -571,21 +578,19 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/index/background_image.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/index/background_image.jpg);
 }
 
 @media screen and (min-width: 480px) {
   .hero {
     width: 480px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/index/background_image.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/index/background_image.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/index/background_image.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/index/background_image.jpg);
   }
 }
 
@@ -594,8 +599,6 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     width: 1200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/index/background_image.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/index/background_image.jpg);
   }
 }
 
@@ -605,7 +608,7 @@ img {
 }
 
 .hero-slogan {
-  max-width: 360px;
+  width: 360px;
   margin: auto;
   text-transform: uppercase;
   color: var(--pirmary-background-color);
@@ -613,6 +616,14 @@ img {
   font-weight: 900;
   line-height: 1.61;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-slogan {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-button {
@@ -1874,5 +1885,104 @@ img {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
+}
+
+.mobile-window {
+  position: fixed;
+  padding: 0 0 0 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.mobile-window.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-top: 21px;
+  cursor: pointer;
+  background-color: var(--pirmary-background-color);
+  border: var(--pirmary-background-color);
+}
+
+.mobile-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.mobile-link__accent {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.mobile-link:hover, .mobile-link:focus {
+  color: var(--accent);
+}
+
+.mobile-list {
+  margin-top: 32px;
+}
+
+.mobile-list:first-child {
+  margin-top: 0;
+}
+
+.mobile-contacts {
+  margin-top: 305px;
+}
+
+.contacts-list:last-child {
+  margin-top: 32px;
+}
+
+.contacts-tel {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.contacts-mail {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--pirmary-text-color);
+}
+
+.mobile-networks {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.networks-list {
+  border-right: 1px solid varrgba(33, 33, 33, 0.2);
 }
 /*# sourceMappingURL=main.css.map */

@@ -146,10 +146,19 @@
   margin-right: 10px;
 }
 
-.submenu {
-  padding: 16px 0;
+.menu-toggle {
+  background-color: var(--pirmary-background-color);
+  border: var(--pirmary-background-color);
+  margin: 16px 0;
+  cursor: pointer;
   margin-left: auto;
   @media (min-width: 768px) {
     display: none;
+  }
+}
+.menu-icon {
+  &:hover,
+  &:focus {
+    color: var(--accent);
   }
 }
