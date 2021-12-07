@@ -25,6 +25,17 @@
     width: 480px;
     display: block;
   }
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+}
+.footer-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 .address {
   @media (max-width: 480px) {
@@ -91,6 +102,9 @@
   @media (min-width: 481px), (max-width: 767px) {
     margin-top: 60px;
     text-align: center;
+  }
+  @media (min-width: 768px) {
+    margin-top: 0px;
   }
 }
 
