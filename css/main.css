@@ -567,8 +567,13 @@ img {
   }
 }
 
+.menu-icon {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-icon:hover, .menu-icon:focus {
-  color: var(--accent);
+  fill: var(--accent);
 }
 
 .hero {
@@ -1894,7 +1899,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
+  background-color: var(--pirmary-background-color);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -1939,11 +1944,11 @@ img {
   color: var(--accent);
 }
 
-.mobile-list {
+.mobile-item {
   margin-top: 32px;
 }
 
-.mobile-list:first-child {
+.mobile-item:first-child {
   margin-top: 0;
 }
 
@@ -1951,7 +1956,7 @@ img {
   margin-top: 305px;
 }
 
-.contacts-list:last-child {
+.contacts-item:last-child {
   margin-top: 32px;
 }
 
@@ -1982,7 +1987,21 @@ img {
   display: flex;
 }
 
-.networks-list {
-  border-right: 1px solid varrgba(33, 33, 33, 0.2);
+.networks-item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 0 10px;
+}
+
+.networks-item:first-child {
+  padding-left: 0;
+}
+
+.networks-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: var(--accent);
 }
 /*# sourceMappingURL=main.css.map */
