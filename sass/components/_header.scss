@@ -5,7 +5,7 @@
 /*-Navigation*/
 
 .navigation {
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
@@ -30,7 +30,7 @@
   @media (min-width: 768px) {
     margin-right: 88px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }
@@ -94,10 +94,10 @@
 .authorization-list {
   margin-left: auto;
   list-style: none;
-  @media screen and(max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }

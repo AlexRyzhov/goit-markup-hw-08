@@ -8,6 +8,7 @@
   overflow: scroll;
   background-color: var(--pirmary-background-color);
   transform: translateX(100%);
+  z-index: 999;
 }
 .mobile-window.is-open {
   transform: translateX(0);
@@ -78,6 +79,7 @@
 .mobile-networks {
   margin-top: 64px;
   display: flex;
+  padding: 0 auto;
 }
 .networks-item {
   border-right: 1px solid rgba(33, 33, 33, 0.2);

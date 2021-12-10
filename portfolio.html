@@ -14,52 +14,70 @@
         <!--navigation-->
         <div class="navigation">
           <nav class="navigation-heading">
-            <a href="#" class="navigation-logo"
-              ><span class="navigation-logo__accent">Web</span>Studio</a
-            >
-            <div class="submenu">
-              <svg class="submenu-icon" width="40px" height="40px">
+            <a href="#" class="navigation-logo"><span class="navigation-logo__accent">Web</span>Studio</a>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg class="menu-icon" width="40px" height="40px">
                 <use href="./images/icons.svg#sub-menu"></use>
               </svg>
-            </div>
+            </button>
             <ul class="navigation-list">
               <li class="navigation-item">
                 <a href="index.html" class="navigation-link">Cтудия</a>
               </li>
               <li class="navigation-item">
-                <a
-                  href="portfolio.html"
-                  class="navigation-link__accent navigation-link__current"
-                  >Портфолио</a
-                >
+                <a class="navigation-link__accent navigation-link__current" href="portfolio.html">Портфолио</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="#">Контакты</a>
               </li>
             </ul>
+            <!--mobile menu-->
+            <div class="mobile-window js-menu-container" id="mobile-menu">
+              <button class="mobile-toggle js-close-menu">
+                <svg class="menu-icon" width="40px" height="40px">
+                  <use href="./images/icons.svg#close"></use>
+                </svg>
+              </button>
+    
+              <ul class="mobile-nav">
+                <li class="mobile-item"><a href="index.html" class="mobile-link">Студия</a></li>
+                <li class="mobile-item"><a href="#" class="mobile-link__accent">Портфолио</a></li>
+                <li class="mobile-item"><a href="#" class="mobile-link">Контакты</a></li>
+              </ul>
+              <ul class="mobile-contacts">
+                <li class="contacts-item"><a href="tel:+380991111111" class="contacts-tel">+38 099 111 11 11</a></li>
+                <li class="contacts-item"><a href="mailto:info@example.com" class="contacts-mail">info@example.com</a></li>
+    
+              </ul>
+              <ul class="mobile-networks">
+                <li class="networks-item"><a href="#" class="networks-link">Instagram</a></li>
+                <li class="networks-item"><a href="#" class="networks-link">Twitter</a></li>
+                <li class="networks-item"><a href="#" class="networks-link">Facebook</a></li>
+                <li class="networks-item"><a href="#" class="networks-link">Linkedin</a></li>
+              </ul>
+            </div>
           </nav>
           <!--authorization-->
           <ul class="authorization-list">
             <li class="authorization-item">
-              <a class="authorization-link" href="mailto:info@example.com"
-                ><svg class="authorization-icon" width="16px" height="12px">
+              <a class="authorization-link" href="mailto:info@example.com"><svg class="authorization-icon" width="16px"
+                  height="12px">
                   <use href="./images/icons.svg#post"></use>
                 </svg>
-                info@example.com</a
-              >
+                info@example.com</a>
             </li>
             <li class="authorization-item">
               <a class="authorization-link" href="tel:+380991111111">
                 <svg class="authorization-icon" width="10px" height="16px">
                   <use href="./images/icons.svg#smartphone"></use>
                 </svg>
-                +38 099 111 11 11</a
-              >
+                +38 099 111 11 11</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
+
 
     <main>
       <section class="section">
@@ -94,9 +112,11 @@
             <li class="projects-item">
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
-                  <img
+                  <img 
+                  srcset="./images/portfolio/tablet-1projects@1x.jpg 354w, ./images/portfolio/desktop-1projects@1x.jpg 370w, ./images/portfolio/mobile-1projects@1x.jpg 450w, ./images/portfolio/tablet-1projects@2x.jpg 708w, ./images/portfolio/desktop-1projects@2x.jpg 740w, ./images/portfolio/mobile-1projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/desktop.jpg"
+                    src="./images/portfolio/mobile-1projects@1x.jpg"
                     alt="Ноутбук"
                   />
                   <div class="projects-wrap">
@@ -118,9 +138,10 @@
             <li class="projects-item">
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
-                  <img
+                  <img srcset="../../images/portfolio/tablet-2projects@1x.jpg 354w, ../../images/portfolio/desktop-2projects@1x.jpg 370w, ../../images/portfolio/mobile-2projects@1x.jpg 450w, ../../images/portfolio/tablet-2projects@2x.jpg 708w, ../../images/portfolio/desktop-2projects@2x.jpg 740w, ../../images/portfolio/mobile-2projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/basketball_players.jpg"
+                    src="../../images/portfolio/mobile-2projects@1x.jpg"
                     alt="Баскетболисты"
                   />
                   <div class="projects-wrap">
@@ -144,9 +165,10 @@
             <li class="projects-item">
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
-                  <img
+                  <img srcset="./images/portfolio/tablet-3projects@1x.jpg 354w, ./images/portfolio/desktop-3projects@1x.jpg 370w, ./images/portfolio/mobile-3projects@1x.jpg 450w, ./images/portfolio/tablet-3projects@2x.jpg 708w, ./images/portfolio/desktop-3projects@2x.jpg 740w, ./images/portfolio/mobile-3projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/logo_restaurant.jpg"
+                    src="./images/portfolio/mobile-3projects@1x.jpg"
                     alt="Ресторан Seafood"
                   />
                   <div class="projects-wrap">
@@ -168,9 +190,10 @@
             <li class="projects-item">
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
-                  <img
+                  <img srcset="./images/portfolio/tablet-4projects@1x.jpg 354w, ./images/portfolio/desktop-4projects@1x.jpg 370w, ./images/portfolio/mobile-4projects@1x.jpg 450w, ./images/portfolio/tablet-4projects@2x.jpg 708w, ./images/portfolio/desktop-4projects@2x.jpg 740w, ./images/portfolio/mobile-4projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/headphones.jpg"
+                    src="./images/portfolio/mobile-4projects@1x.jpg"
                     alt="Проект Prime"
                   />
                   <div class="projects-wrap">
@@ -193,8 +216,10 @@
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
                   <img
+                    srcset="./images/portfolio/tablet-5projects@1x.jpg 354w, ./images/portfolio/desktop-5projects@1x.jpg 370w, ./images/portfolio/mobile-5projects@1x.jpg 450w, ./images/portfolio/tablet-5projects@2x.jpg 708w, ./images/portfolio/desktop-5projects@2x.jpg 740w, ./images/portfolio/mobile-5projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px, (min-width:768px) 354px,(min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/two_boxes.jpg"
+                    src="./images/portfolio/mobile-5projects@1x.jpg"
                     alt="Проект Boxes"
                   />
                   <div class="projects-wrap">
@@ -217,8 +242,10 @@
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
                   <img
+                    srcset="./images/portfolio/tablet-6projects@1x.jpg 354w, ./images/portfolio/desktop-6projects@1x.jpg 370w, ./images/portfolio/mobile-6projects@1x.jpg 450w, ./images/portfolio/tablet-6projects@2x.jpg 708w, ./images/portfolio/desktop-6projects@2x.jpg 740w, ./images/portfolio/mobile-6projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/monoblock.jpg"
+                    src="./images/portfolio/mobile-6projects@1x.jpg"
                     alt="Моноблок"
                   />
                   <div class="projects-wrap">
@@ -241,8 +268,10 @@
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
                   <img
+                   srcset="./images/portfolio/tablet-7projects@1x.jpg 354w, ./images/portfolio/desktop-7projects@1x.jpg 370w, ./images/portfolio/mobile-7projects@1x.jpg 450w, ./images/portfolio/tablet-7projects@2x.jpg 708w, ./images/portfolio/desktop-7projects@2x.jpg 740w, ./images/portfolio/mobile-7projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/magazine.jpg"
+                    src="./images/portfolio/mobile-7projects@1x.jpg"
                     alt="Журнал"
                   />
                   <div class="projects-wrap">
@@ -264,9 +293,10 @@
             <li class="projects-item">
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
-                  <img
+                  <img srcset="./images/portfolio/tablet-8projects@1x.jpg 354w, ./images/portfolio/desktop-8projects@1x.jpg 370w, ./images/portfolio/mobile-8projects@1x.jpg 450w, ./images/portfolio/tablet-8projects@2x.jpg 708w, ./images/portfolio/desktop-8projects@2x.jpg 740w, ./images/portfolio/mobile-8projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/plate.jpg"
+                    src="./images/portfolio/mobile-8projects@1x.jpg"
                     alt="Табличка"
                   />
                   <div class="projects-wrap">
@@ -289,8 +319,10 @@
               <a class="projects-link" href="#">
                 <div class="projects-overlay">
                   <img
+                    srcset="./images/portfolio/tablet-9projects@1x.jpg 354w, ./images/portfolio/desktop-9projects@1x.jpg 370w, ./images/portfolio/mobile-9projects@1x.jpg 450w, ./images/portfolio/tablet-9projects@2x.jpg 708w, ./images/portfolio/desktop-9projects@2x.jpg 740w, ./images/portfolio/mobile-9projects@2x.jpg 900w, "
+                sizes="(min-width:1200px) 370px,(min-width:768px) 354px, (min-width:480px) 450px, 100vw "
                     class="projects-img"
-                    src=".//images/portfolio/working_on_a_laptop.jpg"
+                    src="./images/portfolio/mobile-9projects@1x.jpg"
                     alt="Работа на ноутбуке"
                   />
                   <div class="projects-wrap">
@@ -394,6 +426,10 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+          <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+          <script src="./js/modal.js"></script>
+          <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
