@@ -577,17 +577,19 @@ img {
 }
 
 .hero {
+  width: 480px;
+  height: 400px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-size: cover;
+  background-size: contain;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/mobile-hero@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/mobile-hero@1x.jpg);
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/mobile-hero@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/mobile-hero@2x.jpg);
@@ -596,12 +598,14 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
+    width: 768px;
+    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/tablet-hero@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/tablet-hero@1x.jpg);
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/tablet-hero@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/tablet-hero@2x.jpg);
@@ -610,6 +614,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/desktop-hero@1x.jpg);
@@ -617,7 +623,7 @@ img {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/desktop-hero@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/desktop-hero@2x.jpg);
@@ -1203,11 +1209,17 @@ img {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   margin-top: 30px;
-  width: 450px;
+  width: 100%;
 }
 
 .team-item:nth-child(1) {
   margin-top: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .team-item {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1234,22 +1246,6 @@ img {
   }
   .team-item:last-child {
     margin-right: 0px;
-  }
-}
-
-.team-image {
-  width: 450px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-image {
-    width: 354px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .team-image {
-    width: 270px;
   }
 }
 
@@ -1779,11 +1775,17 @@ img {
 }
 
 .projects-item {
-  max-width: 450px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px 0 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .projects-item {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
