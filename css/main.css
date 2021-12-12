@@ -631,7 +631,7 @@ img {
 }
 
 .hero-slogan {
-  width: 360px;
+  width: 100%;
   margin: auto;
   text-transform: uppercase;
   color: var(--pirmary-background-color);
@@ -639,6 +639,12 @@ img {
   font-weight: 900;
   line-height: 1.61;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 480px) {
+  .hero-slogan {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1604,7 +1610,7 @@ img {
 }
 
 .subcribe-desc {
-  width: 450px;
+  width: 100%;
   padding: 15px 0 15px 16px;
   background-color: 1px solid var(--third-background-color);
   border-radius: 4px;
@@ -1626,6 +1632,12 @@ img {
 
 .subcribe-desc::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 480px) {
+  .subcribe-desc {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
