@@ -1014,6 +1014,7 @@ img {
 }
 
 .benefits-list {
+  width: auto;
   list-style: none;
 }
 
@@ -1028,19 +1029,19 @@ img {
 }
 
 .benefits-item {
+  width: 100%;
   margin: 0 auto 30px auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .benefits-item:last-child {
   margin-bottom: 0px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .benefits-item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
     margin-top: 30px;
-    width: 354px;
   }
   .benefits-item:nth-child(2n) {
     margin-right: 0px;
@@ -1067,7 +1068,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
@@ -1610,7 +1610,6 @@ img {
 }
 
 .subcribe-desc {
-  width: 100%;
   padding: 15px 0 15px 16px;
   background-color: 1px solid var(--third-background-color);
   border-radius: 4px;
@@ -1787,8 +1786,13 @@ img {
   }
 }
 
+.hui {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .projects-item {
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1816,9 +1820,9 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects-item {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -1899,6 +1903,14 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .projects-subtitle {
@@ -2012,6 +2024,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 0 auto;
+  width: auto;
 }
 
 .networks-item {

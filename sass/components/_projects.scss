@@ -9,9 +9,10 @@
     display: flex;
   }
 }
-
+.hui {
+  flex-grow: 1;
+}
 .projects-item {
-  width: 100%;
   justify-content: center;
   margin: 30px 0 0 auto;
   @media screen and (min-width: 480px) {
@@ -27,8 +28,8 @@
       margin-top: 0;
     }
   }
-  @media screen and (min-width: 768px) and(max-width: 1199px) {
-    flex-grow: 1;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    align-items: flex-end;
   }
   @media screen and (min-width: 1200px) {
     max-width: 370px;
@@ -89,6 +90,9 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 
 .projects-subtitle {
