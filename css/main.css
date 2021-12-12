@@ -577,14 +577,13 @@ img {
 }
 
 .hero {
-  width: 480px;
-  height: 400px;
+  max-width: 1600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-size: contain;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/mobile-hero@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/mobile-hero@1x.jpg);
 }
@@ -598,8 +597,6 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
-    height: 400px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/tablet-hero@1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index/tablet-hero@1x.jpg);
   }
@@ -614,8 +611,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index/desktop-hero@1x.jpg);
@@ -1509,6 +1504,12 @@ img {
   color: var(--pirmary-background-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .join-title {
+    text-align: left;
+  }
+}
+
 .join-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1801,6 +1802,14 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects-item {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .projects-item {
     max-width: 370px;
@@ -1878,12 +1887,6 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-
-@media screen and (min-width: 768px), (max-width: 1199px) {
-  .projects-wrapper:first-child {
-    padding-bottom: 56px;
-  }
 }
 
 .projects-subtitle {

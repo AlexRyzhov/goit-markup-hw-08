@@ -2,10 +2,8 @@
 .projects-list {
   flex-wrap: wrap;
   margin-top: 40px;
-
   margin-left: -30px;
   list-style: none;
-
   @media screen and (min-width: 768px) {
     margin-top: 30px;
     display: flex;
@@ -28,6 +26,9 @@
     &:nth-child(-n + 2) {
       margin-top: 0;
     }
+  }
+  @media screen and (min-width: 768px) and(max-width: 1199px) {
+    flex-grow: 1;
   }
   @media screen and (min-width: 1200px) {
     max-width: 370px;
@@ -88,9 +89,6 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-  @media screen and (min-width: 768px) and(max-width: 1199px) {
-    flex-grow: 1;
-  }
 }
 
 .projects-subtitle {
