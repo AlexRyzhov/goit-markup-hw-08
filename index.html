@@ -122,79 +122,91 @@
               Заказать услугу
             </button>
           </div>
-        </div>
-        <!--modal-window-->
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal-window">
-            <button class="modal-close-button" type="button" data-modal-close>
-              <svg class="modal-close-icon" width="18px" height="18px">
-                <use href="./images/icons.svg#close"></use>
-              </svg>
-            </button>
-            <div class="modal-heading">
-              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-              <form class="modal-form" action="modal-form">
-                <div class="modal-subtitle">
-                  <label class="modal-denomination" for="username">Имя</label>
-                  <input
-                    class="modal-subitem"
-                    type="text"
-                    name="username"
-                    id="username"
-                  />
-                  <svg class="modal-icon" width="18px" height="18px">
-                    <use href="./images/icons.svg#person"></use>
-                  </svg>
-                </div>
-                <div class="modal-subtitle">
-                  <label class="modal-denomination" for="tel">Телефон</label>
-                  <input class="modal-subitem" type="tel" name="tel" id="tel" />
-                  <svg class="modal-icon" width="18px" height="18px">
-                    <use href="./images/icons.svg#phone-modal"></use>
-                  </svg>
-                </div>
-                <div class="modal-subtitle">
-                  <label class="modal-denomination" for="email">Почта</label>
-                  <input
-                    class="modal-subitem"
-                    type="email"
-                    name="email"
-                    id="email"
-                  />
-                  <svg class="modal-icon" width="18px" height="18px">
-                    <use href="./images/icons.svg#email-modal"></use>
-                  </svg>
-                </div>
-                <div class="modal-subtitle">
-                  <label class="modal-denomination" for="comments"
-                    >Комментарий</label
-                  >
-                  <textarea
-                    class="modal-subtext"
-                    name="comments"
-                    id="comments"
-                    rows="5"
-                    placeholder="Введите текст"
-                  ></textarea>
-                </div>
-                <!--checkbox-->
-                <div class="checkbox-subtitle">
-                  <label class="checkbox-desc">
+
+          <!--modal-window-->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal-window">
+              <button class="modal-close-button" type="button" data-modal-close>
+                <svg class="modal-close-icon" width="18px" height="18px">
+                  <use href="./images/icons.svg#close"></use>
+                </svg>
+              </button>
+              <div class="modal-heading">
+                <p class="modal-title">
+                  Оставьте свои данные, мы вам перезвоним
+                </p>
+                <form class="modal-form" action="modal-form">
+                  <div class="modal-subtitle">
+                    <label class="modal-denomination" for="username">Имя</label>
                     <input
-                      class="checkbox-subitem"
-                      type="checkbox"
-                      name="select"
+                      class="modal-subitem"
+                      type="text"
+                      name="username"
+                      id="username"
                     />
-                    <span class="checkbox-text"></span>
-                    Соглашаюсь с рассылкой и принимаю
-                    <span class="checkbox-text__accent">Условия договора</span>
-                  </label>
-                </div>
-                <!--Чекбокс-->
-                <div class="modal-button">
-                  <button class="modal-submit" type="submit">Отправить</button>
-                </div>
-              </form>
+                    <svg class="modal-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#person"></use>
+                    </svg>
+                  </div>
+                  <div class="modal-subtitle">
+                    <label class="modal-denomination" for="tel">Телефон</label>
+                    <input
+                      class="modal-subitem"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                    />
+                    <svg class="modal-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#phone-modal"></use>
+                    </svg>
+                  </div>
+                  <div class="modal-subtitle">
+                    <label class="modal-denomination" for="email">Почта</label>
+                    <input
+                      class="modal-subitem"
+                      type="email"
+                      name="email"
+                      id="email"
+                    />
+                    <svg class="modal-icon" width="18px" height="18px">
+                      <use href="./images/icons.svg#email-modal"></use>
+                    </svg>
+                  </div>
+                  <div class="modal-subtitle">
+                    <label class="modal-denomination" for="comments"
+                      >Комментарий</label
+                    >
+                    <textarea
+                      class="modal-subtext"
+                      name="comments"
+                      id="comments"
+                      rows="5"
+                      placeholder="Введите текст"
+                    ></textarea>
+                  </div>
+                  <!--checkbox-->
+                  <div class="checkbox-subtitle">
+                    <label class="checkbox-desc">
+                      <input
+                        class="checkbox-subitem"
+                        type="checkbox"
+                        name="select"
+                      />
+                      <span class="checkbox-text"></span>
+                      Соглашаюсь с рассылкой и принимаю
+                      <span class="checkbox-text__accent"
+                        >Условия договора</span
+                      >
+                    </label>
+                  </div>
+                  <!--Чекбокс-->
+                  <div class="modal-button">
+                    <button class="modal-submit" type="submit">
+                      Отправить
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
