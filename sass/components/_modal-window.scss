@@ -165,7 +165,7 @@
 
 .checkbox-subtitle {
   display: flex;
-  flex-direction: row;
+
   justify-content: center;
   align-items: center;
   margin-top: 20px;
@@ -177,6 +177,8 @@
 
 .checkbox-desc {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   color: rgba(117, 117, 117, 1);
   font-size: 12px;
