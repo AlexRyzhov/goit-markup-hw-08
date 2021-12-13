@@ -719,16 +719,16 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 479px) {
-  .modal-window {
-    overflow: scroll;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .modal-window {
     width: 450px;
     height: 609px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal-window {
+    overflow: scroll;
   }
 }
 
