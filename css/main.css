@@ -719,6 +719,12 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 479px) {
+  .modal-window {
+    overflow: scroll;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .modal-window {
     width: 450px;
@@ -902,6 +908,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -913,7 +923,6 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  width: auto;
 }
 
 .checkbox-desc {
