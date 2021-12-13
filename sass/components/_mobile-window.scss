@@ -77,10 +77,14 @@
   color: var(--pirmary-text-color);
 }
 .mobile-networks {
-  margin-top: 64px;
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
   padding: 0 auto;
   width: auto;
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 .networks-item {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -89,6 +93,7 @@
     padding-left: 0;
   }
 }
+
 .networks-link {
   text-decoration: none;
   font-weight: 500;

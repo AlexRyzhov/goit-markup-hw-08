@@ -2001,12 +2001,22 @@ img {
 }
 
 .mobile-networks {
-  margin-top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 64px;
   padding: 0 auto;
   width: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .networks-item {
