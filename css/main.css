@@ -1847,11 +1847,17 @@ img {
 }
 
 .projects-text {
-  padding: 120px 24px;
+  padding: 20px 24px;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   color: var(--pirmary-background-color);
+}
+
+@media screen and (min-width: 768px) {
+  .projects-text {
+    padding: 120px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
