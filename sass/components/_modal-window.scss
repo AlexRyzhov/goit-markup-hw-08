@@ -74,6 +74,7 @@
 .modal-title {
   @media screen and (max-width: 479px) {
     margin-top: 0px;
+    font-size: 16px;
   }
   margin-top: 40px;
   padding: 0 40px;
@@ -92,8 +93,11 @@
 }
 
 .modal-form {
-  margin-top: 12px;
   padding: 0 20px;
+  @media screen and (min-width: 480px) {
+    margin-top: 12px;
+    padding: 0 20px;
+  }
 }
 
 .modal-denomination {
@@ -106,6 +110,9 @@
   flex-direction: column;
   position: relative;
   width: 260px;
+  &:first-child {
+    margin-top: 0;
+  }
   @media screen and (min-width: 480px) {
     width: 370px;
   }
