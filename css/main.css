@@ -2017,7 +2017,13 @@ img {
 }
 
 .mobile-contacts {
-  margin-top: 305px;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-contacts {
+    margin-top: 305px;
+  }
 }
 
 .contacts-item:last-child {
@@ -2050,16 +2056,14 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 64px;
+  margin-top: 10px;
   padding: 0 auto;
   width: auto;
 }
 
 @media screen and (min-width: 480px) {
   .mobile-networks {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-top: 64px;
   }
 }
 
