@@ -781,6 +781,12 @@ img {
   color: #212121;
 }
 
+@media screen and (max-width: 479px) {
+  .modal-title {
+    margin-top: 0px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal-title {
     padding: 0 20px;
