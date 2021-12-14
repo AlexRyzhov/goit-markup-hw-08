@@ -22,6 +22,7 @@
 
 .modal-window {
   width: 320px;
+  height: auto;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -228,6 +229,11 @@
 }
 
 .modal-button {
+  @media screen and (max-width: 479px) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;

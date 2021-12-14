@@ -326,15 +326,13 @@ img {
   }
 }
 
-@media (max-width: 480px) {
-  .section {
-    padding: 60px 0;
-  }
+.section {
+  padding: 60px 0;
 }
 
-@media (min-width: 481px), (max-width: 767px) {
+@media (min-width: 1200px) {
   .section {
-    padding: 60px 0;
+    padding: 94px 0;
   }
 }
 
@@ -701,6 +699,7 @@ img {
 /*modal-window*/
 .modal-window {
   width: 320px;
+  height: auto;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -1001,6 +1000,13 @@ img {
           justify-content: center;
   margin-top: 30px;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .modal-submit {
@@ -1874,7 +1880,6 @@ img {
 }
 
 .projects-text {
-  padding: 20px 24px;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.03em;
